@@ -533,7 +533,7 @@ reconstruct LOKMANYA_GATHA_CHRONICLE_1908
 ```
 
 *(The output of the final `reconstruct` command was not captured during this solve and is not claimed here.)*
-
+FLAG: NullOrigin{L0km4ny4_G4th4_25S3pt_Sw4r4jy4_PRX02_}
 ## 22. Conclusion
 
 This challenge is a well-constructed example of layered puzzle design: a web-based reconnaissance stage that discloses just enough information to derive credentials without brute-forcing, paired with a local reverse-engineering stage that requires actually reading and understanding a small custom script rather than treating it as a black box. The historical framing around Lokmanya Tilak's Mandalay imprisonment isn't incidental flavor — it's load-bearing, since the ZIP password itself is derived directly from that history. The "every archive hides another archive" theme plays out literally at every layer: an encrypted ZIP hides a decoder and a dispatch, which hide an encrypted payload, which hides a beacon key, which unlocks a final stage in a completely different environment.
